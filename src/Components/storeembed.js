@@ -9,7 +9,7 @@ export const Liveboard = () => {
           width: "100%",
           height: "800px",
         },
-        pinboardId: "41dd8d51-83ad-47ae-bbd1-801439319b0e",
+        pinboardId: "41dd8d51-83ad-47ae-bbd1-801439319b0e", 
       });
       tslive.render();
     }, []);

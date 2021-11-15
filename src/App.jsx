@@ -11,7 +11,7 @@ import {
   Page,
 } from "@thoughtspot/visual-embed-sdk";
 
-const TSURL = "https://try.thoughtspot.cloud";
+const TSURL = "https://try.thoughtspot.cloud"; 
 
 function App() {
 
