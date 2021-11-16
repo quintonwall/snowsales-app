@@ -1,6 +1,8 @@
 import './App.css';
-import { Route, NavLink, Routes} from 'react-router-dom';
-import StoreSales from './Components/storesales';
+import React from 'react';
+import BurgerMenu from './Components/Burger/BurgerMenu';
+import { Route, Routes} from 'react-router-dom';
+import StoreSales from './Components/storesales'
 import About from './Components/about';
 
 // ThoughtSpot
@@ -15,25 +17,24 @@ const TSURL = "https://try.thoughtspot.cloud";
 function App() {
 
   init({
-    thoughtSpotHost: TSURL,
+    thoughtSpotHost: TSURL, 
     authType: AuthType.None
   });
 
   return (
 
     <div className="App">
-       <Routes>
+     
+      <header>
+        <BurgerMenu/>  
+      </header>
+
+      <Routes>
         <Route path="/" element={<h1>Home</h1>} />
         <Route path="/storesales" element={<StoreSales />} />
         <Route path="/about" element={<About />} />
       </Routes>
-        <div className="list">
-          <ul>
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/storesales">Store Sales</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-          </ul>
-        </div>
+   
   </div> 
   
   );
