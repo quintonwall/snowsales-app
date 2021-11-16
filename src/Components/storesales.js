@@ -1,4 +1,4 @@
-import { PinboardEmbed } from "@thoughtspot/visual-embed-sdk";
+import { PinboardEmbed } from "@thoughtspot/visual-embed-sdk/lib/src/react";
 
 
 
