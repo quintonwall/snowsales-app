@@ -356,7 +356,7 @@ S_Store_Name, I_Product_Name, Ss_Quantity, S_Country, S_State, S_Net_Paid
 
 Next, we will add our chart. Thoughtspot provides many typical charting options likes line, donuts, and column charts. We are going to use a stacked column chart to group sales by state and stack product types to give the end user an easy way to visualize the results.  Tap the chart icon on the right of the screen and select Stacked Column
 
-[alt_text](images/image20.png "image_tooltip")
+![alt_text](images/image20.png "image_tooltip")
 
 
 At first, the chart layout isn't exactly what we are looking for. Tap the **Cog** icon, directly under the chart icon you just tapped, and configure you chart using the settings below. When you are done, tap **Pin** to save your chart to the Liveboard.
@@ -741,7 +741,7 @@ You should see an app like below. Try tapping on the hamburger and testing out t
 import { bubble as Menu } from "react-burger-menu";
 ```
 
-![alt_text](images/image9.gif "image_tooltip")
+![alt_text](images/image18.gif "image_tooltip")
 
 
 If you receive an error message that starts with Error: Invalid Hook Call Warning, you may need to explicitly set the react-router-dom version. If so, open `package.json` and add the following to the dependencies array:
@@ -769,7 +769,7 @@ From within Thoughtspot, Tap Develop in the top navigation, then Liveboard from 
 
 
 
-![alt_text](images/image18.gif "image_tooltip")
+![alt_text](images/image19.gif "image_tooltip")
 
 
 We want to start by embedding the Liveboard we created earlier. From the Liveboard selector, select **Snow - Store Sales**. You will immediately see that the code has been updated to include the unique identifier of the Liveboard. Tap run to render the Liveboard. Before we move on, find the `pinboardId` in the generated code, and copy this. We will use it later in the tutorial. The actual id gets dynamically selected when you change the component you want to render in the Playground.  
