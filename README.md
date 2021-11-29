@@ -38,7 +38,7 @@ A worksheet is a space where you can write SQL statements to interrogate data. W
   </tr>
 </table>
 
-![alt_text](images/image1.gif "image_tooltip")
+![alt_text](images/image2.gif "image_tooltip")
 
 
 Let’s go ahead and test that everything is configured correctly. WIthin the query editor, execute the following statement. You should see results populate below. 
@@ -109,7 +109,7 @@ In a few minutes you should receive an activation email. Follow the instructions
 
 Now that we have our cloud environments setup, it is time to create the connection from ThoughtSpot to Snowflake. If you haven’t done so already, go ahead and log into your ThoughtSpot account. From the top menu, select **Data**, then **Connections** from the left hand menu, tap **Snowflake**, give your connection the name `TutorialSnowStore`, and tap continue. 
 
-![alt_text](images/image2.gif "image_tooltip")
+![alt_text](images/image5.gif "image_tooltip")
 
 
 After tapping **Continue**, you will be prompted to enter Snowflake connection details. These are the details you collected earlier from the Snowflake Worksheet Context. Copy these into form, paying careful attention to case. Connection details are case sensitive and need to appear exactly as they appear in Snowflake. Once you have entered your details, tap **Continue **to select the tables we want to connect to. 
@@ -251,7 +251,7 @@ Go ahead and map the following fields from each table.
 
 Once you have selected all the appropriate fields, tap Create Connection. To confirm you created everything, tap Data from the top menu, then Connections. You should see a tile like the one below.
 
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image8.png "image_tooltip")
 
 
 
@@ -264,18 +264,18 @@ If you remember from above, one of the tables we connected to was `Store_sales`.
 
 ### Join 1: Store_Sales to Store
 
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image15.png "image_tooltip")
 
 
 
 ### Join 2: Store_Sales to Item
 
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image21.png "image_tooltip")
 
 
 Once you are done, you should see a final configuration like this, with a handy visual ERD for your reference. That’s it. No need to write SQL statements. ThoughtSpot takes care of all the syntax and optimization for you. 
 
-![alt_text](images/image6.png "image_tooltip")
+![alt_text](images/image16.png "image_tooltip")
 
 
 
@@ -288,12 +288,12 @@ Once you are done, you should see a final configuration like this, with a handy 
 
 Now, it is time to create the worksheet that user’s will interact with. Just remember, a worksheet in ThoughtSpot functions very similar to a database view. The good news is that now that we have our modeling complete, creating a Worksheet is really simple. From the top navigation, select **Data**, then **Worksheets**, and finally **New Worksheet**. Select the three tables from Snowflake, using the **Filter by name** box to quickly locate the tables we need. Once select, tap **Close.**
 
-![alt_text](images/image7.png "image_tooltip")
+![alt_text](images/image1.png "image_tooltip")
 
 
 With the tables selected, we can create the worksheet by expanding the **Sources** tree on the left, and selecting the columns we need. To keep things simple, we are just going to select them all. If you don’t want to select individual columns, you can also tap on the name of the table, the tap **Add Columns** to add all the columns at once.
 
-![alt_text](images/image8.gif "image_tooltip")
+![alt_text](images/image12.gif "image_tooltip")
 
 
 
@@ -302,7 +302,7 @@ With the tables selected, we can create the worksheet by expanding the **Sources
 So far we have used the visual designers to create an answer. If you are more familiar with, or have an existing, SQL statement, you can also use this to create a Worksheet using the new SQL based view feature currently available in Beta. To do, select SQL based view from the Data tab, and choose the TutorialSnowStore connection. 
 
 
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
 
 
 From here, you can write your query using familiar SQL syntax. For example, if we wanted to create a similar Worksheet from the tutorial steps above, we could write the following statement.
@@ -332,7 +332,7 @@ From the top navigation, select **Liveboards**, then tap the **+Liveboard** butt
 
 
 
-![alt_text](images/image11.gif "image_tooltip")
+![alt_text](images/image7.gif "image_tooltip")
 
 
 
@@ -343,7 +343,7 @@ Our Liveboard isn’t terribly exciting right now. We can fix that easily by cre
 Go ahead and tap on the **Start Searching** button. You will be presented with a familiar interface show data sources on the left. We are going to leverage the StoreSales worksheet we created previously. Tap on the small 
 
 
-![alt_text](images/image12.png "image_tooltip")
+![alt_text](images/image11.png "image_tooltip")
 icon and type StoreSales in the filter dialog, then select StoreSales. Be careful not to select STORE_SALES. This is the junction object from Snowflake, and not the materialized View or Worksheet we created during this tutorial. 
 
 Now that we have our data source selected, add the following columns to our search criteria. Here is where you see the work we did creating the Worksheet start to pay off. A user doesn’t need to understand the underlying data structure or master complex sql statements like joins and aggregate functions, everything is taken care of for you. And, best of all, users can simply type questions to retrieve the answers they need. Go ahead add the following fields by typing  into the query box. The results will update in real time.Tap **Enter** when complete.  
@@ -356,13 +356,13 @@ S_Store_Name, I_Product_Name, Ss_Quantity, S_Country, S_State, S_Net_Paid
 
 Next, we will add our chart. Thoughtspot provides many typical charting options likes line, donuts, and column charts. We are going to use a stacked column chart to group sales by state and stack product types to give the end user an easy way to visualize the results.  Tap the chart icon on the right of the screen and select Stacked Column
 
-[alt_text](images/image13.png "image_tooltip")
+[alt_text](images/image20.png "image_tooltip")
 
 
 At first, the chart layout isn't exactly what we are looking for. Tap the **Cog** icon, directly under the chart icon you just tapped, and configure you chart using the settings below. When you are done, tap **Pin** to save your chart to the Liveboard.
 
 
-![alt_text](images/image14.png "image_tooltip")
+![alt_text](images/image17.png "image_tooltip")
 
 
 
@@ -466,7 +466,7 @@ Create a new folder Components in the src directory, then create 2 additional pa
 * About.js
 
     
-![alt_text](images/image15.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 
@@ -562,7 +562,7 @@ Then, create a new folder, `Components`, with a subfolder, `Burger`, and two fil
 
 
 
-![alt_text](images/image16.png "image_tooltip")
+![alt_text](images/image13.png "image_tooltip")
 
 
 Then, add the following code:
@@ -741,7 +741,7 @@ You should see an app like below. Try tapping on the hamburger and testing out t
 import { bubble as Menu } from "react-burger-menu";
 ```
 
-![alt_text](images/image17.gif "image_tooltip")
+![alt_text](images/image9.gif "image_tooltip")
 
 
 If you receive an error message that starts with Error: Invalid Hook Call Warning, you may need to explicitly set the react-router-dom version. If so, open `package.json` and add the following to the dependencies array:
@@ -776,7 +776,7 @@ We want to start by embedding the Liveboard we created earlier. From the Liveboa
 
 
 
-![alt_text](images/image19.png "image_tooltip")
+![alt_text](images/image4.png "image_tooltip")
 
 
 
@@ -843,7 +843,7 @@ export default function StoreSales() {
 
 Save your changes, and run your app. Tap on the hamburger icon, then Store Sales. You will now be presented with a login to your ThoughtSpot instance. Enter your details, and the Liveboard shall be rendered within your app. Tap around and see how you can interact with the data. Cool huh?
 
-![alt_text](images/image20.gif "image_tooltip")
+![alt_text](images/image9.gif "image_tooltip")
 
 
 
@@ -938,7 +938,7 @@ export default function FullApp() {
 
 That’s it. Go ahead and run the app, navigate to the Full App page, and check out all of your hard work. Nice job! If you want to modify aspects of the full app experience, there are a number of parameters you can configure in the `AppEmbed` component. The best way to learn what you can change is by jumping into the Developer Playground and experimenting with the options.
 
-![alt_text](images/image21.png "image_tooltip")
+![alt_text](images/image14.png "image_tooltip")
 
 
 
